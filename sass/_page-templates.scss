@@ -4,4 +4,37 @@
 
 /* All Archives Page */
 
-/* Submit a Quote Page */
+.home{
+    background-color:#222;
+    color: white;
+
+.site-content{
+    margin:auto;
+    margin:auto;
+    width: 1080px;
+    line-height: $font__line-height-body;
+    font-size: 1rem;
+    letter-spacing: 1.5;
+    h2{
+    color: $color__text-green;
+        }
+    }
+
+.site-branding,
+.site-description,
+.site-info{
+
+        display: none;
+    }
+}
+#new-quote-button{
+    color: $color__text-green;
+    border-color: $color__text-green;
+    padding: 0.9rem 1.9rem;
+    background-color: transparent;
+    box-shadow: none;
+    text-shadow: none;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+    /* Submit a Quote Page */
