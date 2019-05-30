@@ -4,14 +4,16 @@
 
 /* All Archives Page */
 
-.home{
+body{
     background-color:#222;
     color: white;
 
-.site-content{
+.site-content,
+.site-header{
     // margin:auto;
     // margin:auto;
     // width: 1080px;
+    text-align: center;
     line-height: $font__line-height-body;
     font-size: 1rem;
     letter-spacing: 1.5;

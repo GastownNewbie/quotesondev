@@ -620,18 +620,21 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* All Archives Page */
-.home {
+body {
   background-color: #222;
   color: white; }
-  .home .site-content {
+  body .site-content,
+  body .site-header {
+    text-align: center;
     line-height: 1.5;
     font-size: 1rem;
     letter-spacing: 1.5; }
-    .home .site-content h2 {
+    body .site-content h2,
+    body .site-header h2 {
       color: #00cc00; }
-  .home .site-branding,
-  .home .site-description,
-  .home .site-info {
+  body .site-branding,
+  body .site-description,
+  body .site-info {
     display: none; }
 
 #new-quote-button {

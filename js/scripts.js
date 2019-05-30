@@ -1,36 +1,26 @@
-// (function ($) {
+(function ($) {
 
-//     $('#toggle-status').on('click', function (event) {
-//         event.preventDefault();
+    $('#new-quote-button').on('click', function (event) {
+        event.preventDefault();
 
-//         $.ajax({
-//             method: 'post',
+        $.ajax({
+            method: 'get',
 
-//             url: api_vars.rest_url + `http://localhost:8888/quotesondev/wp-json/wp/v2/posts?filter[orderby]=rand&filter[posts_per_page]=1`,
+            url: api_vars.rest_url + "wp/v2/posts?filter[orderby]=rand&filter[posts_per_page]=1",
 
+        })
+            .done(function (data) {
+                const $title = data[0].title.rendered;
+                const $content = data[0].content.rendered;
+                const $quoteSource = data[0]._qod_quote_source;
+                const $quoteSourceUrl = data[0]._qod_quote_source_url;
+                console.log($title, $content, $quoteSource, $quoteSourceUrl)
 
+                $(".entry-content").html($content);
+                $(".entry-title").html($title);
+                $(".source").html('<a href="' + $quoteSourceUrl + '">' + $quoteSource + '</a>');
+            });
 
-//             // +  get rid of wp etc change end to random quote url
+    });
 
-//             // data: {
-//             //     get: 
-//             // get request here
-//             // grab input values of fields
-
-
-//             // },
-//             // beforeSend: function (xhr) {
-//             //
-//             // }
-
-
-
-//         }).done(function (response) {
-//             //console log the response
-//             alert('Success! The status had been changed.');
-
-//         });
-
-//     });
-
-// })(jQuery);
+})(jQuery);

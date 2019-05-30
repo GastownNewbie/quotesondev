@@ -7,7 +7,7 @@
 
 get_header(); ?>
 
-<div id="primary" class="content-area">
+<div id="primary" class="container" class="content-area">
 	<main id="main" class="site-main" role="main">
 
 
@@ -26,7 +26,7 @@ get_header(); ?>
 
 			<?php endwhile; ?>
 
-			<?php the_posts_navigation(); ?>
+
 
 		<?php else : ?>
 
@@ -34,10 +34,6 @@ get_header(); ?>
 
 		<?php endif; ?>
 	</main><!-- #main -->
-	<nav id="site-navigation" class="main-navigation" role="navigation">
-		<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php echo esc_html('Primary Menu'); ?></button>
-		<?php wp_nav_menu(array('theme_location' => 'primary', 'menu_id' => 'primary-menu')); ?>
-	</nav><!-- #site-navigation -->
 
 </div><!-- #primary -->
 
