@@ -620,9 +620,38 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* All Archives Page */
+site {
+  max-width: 620px; }
+
 body {
   background-color: #222;
-  color: white; }
+  color: white;
+  text-align: center; }
+  body .site-content {
+    width: 100 vw; }
+  body .entry-content::before {
+    font-family: 'FontAwesome';
+    font-weight: 400;
+    content: '\f10d';
+    font-size: 4rem;
+    color: #00cc00; }
+  body .entry-content::after {
+    font-family: "FontAwesome";
+    font-weight: 400;
+    content: "\f10e";
+    color: #00cc00;
+    font-size: 4rem; }
+  body .entry-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
   body .site-content,
   body .site-header {
     text-align: center;
