@@ -19,17 +19,17 @@
 </head>
 
 <body <?php body_class(); ?>>
-	<div id="page" class="hfeed site">
+	<div id="page" class="hfeed site container">
 		<a class="skip-link screen-reader-text" href="#content"><?php echo esc_html('Skip to content'); ?></a>
 
-		<header id="masthead" class="site-header" class="container" role="banner">
+		<header id="masthead" class="site-header" role="banner">
 			<div class="site-branding">
 				<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url(home_url('/')); ?>" rel="home"><?php bloginfo('name'); ?></a></h1>
 				<p class="site-description"><?php bloginfo('description'); ?></p>
 
 			</div><!-- .site-branding -->
-			<img src="<?php echo get_template_directory_uri() . '/assets/images/qod-logo.svg'; ?>">
+			<img src="<?php echo get_template_directory_uri() . '/assets/images/qod-logo.svg'; ?> " alt="quotes on dev logo">
 		</header><!-- #masthead -->
 
 	</div>
-	<div id="content" class="site-content"></div>
+	<div id="content" class="site-content">

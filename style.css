@@ -620,27 +620,26 @@ object {
 # Page Templates
 --------------------------------------------------------------*/
 /* All Archives Page */
-site {
-  max-width: 620px; }
-
 body {
   background-color: #222;
   color: white;
   text-align: center; }
   body .site-content {
-    width: 100 vw; }
-  body .entry-content::before {
-    font-family: 'FontAwesome';
-    font-weight: 400;
-    content: '\f10d';
-    font-size: 4rem;
-    color: #00cc00; }
-  body .entry-content::after {
-    font-family: "FontAwesome";
-    font-weight: 400;
-    content: "\f10e";
-    color: #00cc00;
-    font-size: 4rem; }
+    width: 100vw; }
+    body .site-content .entry-content::before {
+      font-family: 'FontAwesome';
+      font-weight: 400;
+      content: '\f10d';
+      font-size: 4rem;
+      color: #00cc00;
+      padding: 10px; }
+    body .site-content .entry-content::after {
+      font-family: "FontAwesome";
+      font-weight: 400;
+      content: "\f10e";
+      color: #00cc00;
+      font-size: 4rem;
+      padding: 10px; }
   body .entry-content {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -651,7 +650,10 @@ body {
             flex-direction: row;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
-            justify-content: center; }
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
   body .site-content,
   body .site-header {
     text-align: center;
@@ -662,8 +664,7 @@ body {
     body .site-header h2 {
       color: #00cc00; }
   body .site-branding,
-  body .site-description,
-  body .site-info {
+  body .site-description {
     display: none; }
 
 #new-quote-button {

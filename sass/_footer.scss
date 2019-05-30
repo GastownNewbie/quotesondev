@@ -1,8 +1,12 @@
 // Footer
-.navigation,
-.posts-navigation,
-.site-footer{
+
+footer {
+    height: 200px !important;
+    background: red;
+}
+.navigation{
     background-color:#222;
     color: white;
-
+    height: 50px;
+    background: red;
 }

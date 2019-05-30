@@ -3,24 +3,25 @@
 --------------------------------------------------------------*/
 
 /* All Archives Page */
-site{
-    max-width: 620px;
-}
 body{
     background-color:#222;
     color: white;
     text-align: center;
+   
 
 .site-content{
-    width: 100 vw;
-}
+    width: 100vw;
+
+
 
 .entry-content::before {
+
             font-family: 'FontAwesome'; 
             font-weight: 400; 
             content: '\f10d';
             font-size: 4rem;
-            color: $color__text-green;;
+            color: $color__text-green;
+            padding: 10px;
         }
         .entry-content::after {
             font-family: "FontAwesome"; 
@@ -28,16 +29,17 @@ body{
             content: "\f10e";
             color: $color__text-green;
             font-size:4rem;
+            padding:10px;
+        }
+}
+        .entry-content{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
         }
 
-.entry-content{
-
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-}
-
-
+  
 
 .site-content,
 .site-header{
@@ -55,8 +57,7 @@ body{
 
 
 .site-branding,
-.site-description,
-.site-info{
+.site-description{
 
         display: none;
     }
