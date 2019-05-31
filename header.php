@@ -28,7 +28,7 @@
 				<p class="site-description"><?php bloginfo('description'); ?></p>
 
 			</div><!-- .site-branding -->
-			<img src="<?php echo get_template_directory_uri() . '/assets/images/qod-logo.svg'; ?> " alt="quotes on dev logo">
+			<a href="<?php echo esc_url(home_url('/')); ?>"><img src=" <?php echo get_template_directory_uri() . '/assets/images/qod-logo.svg'; ?> " alt=" quotes on dev logo"></a>
 		</header><!-- #masthead -->
 
 
