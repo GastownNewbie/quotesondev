@@ -10,14 +10,14 @@ body{
 
 .container{
     max-width: $desktop_width;
-    margin-right: auto;
-    margin-left: auto;
     padding: 2.5%;
-    width: 100%
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .site-content{
-    width: 100vw;
+    // width: 100vw;
 
    
     .entry-content::before {
@@ -47,6 +47,10 @@ body{
     line-height: $font__line-height-body;
     font-size: 1rem;
     letter-spacing: 1.5;
+    img{
+    width: 700px;
+
+    }
     h2{
     color: $color__text-green;
         }
@@ -61,13 +65,18 @@ body{
 
 #new-quote-button{
     color: $color__text-green;
-    border-color: $color__text-green;
     padding: 0.9rem 1.9rem;
     background-color: transparent;
     box-shadow: none;
     text-shadow: none;
     font-size: 1.6rem;
     font-weight: 400;
+    border: solid 1px $color__text-green;
+
+    &:hover{
+        opacity: 0.8;
+    }
+
 }
 } //end of body
 
@@ -76,8 +85,19 @@ body{
         display: flex;
        text-align: left;
     }
+   
     .type-post{
         font-size: 2.5rem;
+        h2{
+            font-size: 2.5rem;
+            color: white;
+        }
+        a{
+            color: $color__text-green;
+        }
+    }
+    .entry-meta{
+        text-align: left;
     }
 }
   
