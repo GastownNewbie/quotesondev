@@ -456,7 +456,6 @@ a {
   float: right;
   width: 100%; }
   .main-navigation ul {
-    display: none;
     list-style: none;
     margin: 0;
     padding-right: 0; }
@@ -623,70 +622,53 @@ object {
 body {
   background-color: #222;
   color: white;
-  text-align: center; }
+  line-height: 1.5;
+  letter-spacing: 1.5; }
   body .container {
     max-width: 1080px;
     padding: 2.5%;
     width: 100%;
     margin-left: auto;
     margin-right: auto; }
-  body .site-content .entry-content::before {
-    font-family: 'FontAwesome';
-    font-weight: 400;
-    content: '\f10d';
-    font-size: 4rem;
-    color: #00cc00;
-    padding: 10px; }
-  body .site-content .entry-content::after {
-    font-family: "FontAwesome";
-    font-weight: 400;
-    content: "\f10e";
-    color: #00cc00;
-    font-size: 4rem;
-    padding: 10px; }
-  body .site-content,
-  body .site-header {
-    text-align: center;
-    line-height: 1.5;
-    font-size: 1rem;
-    letter-spacing: 1.5; }
-    body .site-content img,
-    body .site-header img {
-      width: 700px; }
-    body .site-content h2,
-    body .site-header h2 {
-      color: #00cc00; }
   body .site-branding,
   body .site-description {
     display: none; }
-  body #new-quote-button {
-    color: #00cc00;
-    padding: 0.9rem 1.9rem;
-    background-color: transparent;
-    -webkit-box-shadow: none;
-            box-shadow: none;
-    text-shadow: none;
-    font-size: 1.6rem;
-    font-weight: 400;
-    border: solid 1px #00cc00; }
-    body #new-quote-button:hover {
-      opacity: 0.8; }
 
-.home .entry-content {
+.site-content,
+.site-header {
+  text-align: left; }
+  .site-content img,
+  .site-header img {
+    width: 350px; }
+
+.blog .entry-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  text-align: left;
+  font-size: 1.5rem;
+  font-weight: 300; }
+
+.blog .type-post a {
+  color: #00cc00;
+  font-size: 1.5rem;
+  font-weight: 300; }
+
+.blog .entry-meta {
   text-align: left; }
 
-.home .type-post {
-  font-size: 2.5rem; }
-  .home .type-post h2 {
-    font-size: 2.5rem;
-    color: white; }
-  .home .type-post a {
-    color: #00cc00; }
-
-.home .entry-meta {
-  text-align: left; }
+#new-quote-button {
+  color: #00cc00;
+  padding: 0.9rem 1.9rem;
+  background-color: transparent;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  text-shadow: none;
+  border: solid 1px #00cc00;
+  font-size: 1.5rem;
+  font-weight: 300; }
+  @media (min-width: 1080px) {
+    #new-quote-button:hover {
+      opacity: 0.8; } }
 
 /* Submit a Quote Page */
