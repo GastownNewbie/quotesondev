@@ -640,6 +640,14 @@ body {
   .site-content img,
   .site-header img {
     width: 350px; }
+    @media screen and (min-width: 600px) {
+      .site-content img,
+      .site-header img {
+        width: 500px; } }
+    @media screen and (min-width: 1080px) {
+      .site-content img,
+      .site-header img {
+        width: 700px; } }
 
 .blog .entry-content {
   display: -webkit-box;
@@ -648,11 +656,18 @@ body {
   text-align: left;
   font-size: 1.5rem;
   font-weight: 300; }
+  @media screen and (min-width: 600px) {
+    .blog .entry-content {
+      font-size: 2rem; } }
 
 .blog .type-post a {
   color: #00cc00;
   font-size: 1.5rem;
   font-weight: 300; }
+
+@media screen and (min-width: 600px) {
+  .blog .type-post {
+    font-size: 2rem; } }
 
 .blog .entry-meta {
   text-align: left; }
@@ -667,7 +682,7 @@ body {
   border: solid 1px #00cc00;
   font-size: 1.5rem;
   font-weight: 300; }
-  @media (min-width: 1080px) {
+  @media screen and (min-width: 1080px) {
     #new-quote-button:hover {
       opacity: 0.8; } }
 

@@ -3,41 +3,40 @@
 --------------------------------------------------------------*/
 
 /* All Archives Page */
-body{
-    background-color:#222;
-    color: white;
-    // text-align: center;
-    line-height: $font__line-height-body;
-    letter-spacing: 1.5;
+body {
+  background-color: #222;
+  color: white;
+  // text-align: center;
+  line-height: $font__line-height-body;
+  letter-spacing: 1.5;
 
-.container{
+  .container {
     max-width: $desktop_width;
     padding: 2.5%;
     width: 100%;
     margin-left: auto;
     margin-right: auto;
-}
-.site-branding,
-.site-description{
-
-        display: none;
-    }
+  }
+  .site-branding,
+  .site-description {
+    display: none;
+  }
 } //end of body
 
 // .site-content{
-   
+
 //     .entry-content::before {
 
-//             font-family: 'FontAwesome'; 
-//             font-weight: 400; 
+//             font-family: 'FontAwesome';
+//             font-weight: 400;
 //             content: '\f10d';
 //             font-size: 4rem;
 //             color: $color__text-green;
 //             padding: 10px;
 //         }
 //         .entry-content::after {
-//             font-family: "FontAwesome"; 
-//             font-weight: 400; 
+//             font-family: "FontAwesome";
+//             font-weight: 400;
 //             content: "\f10e";
 //             color: $color__text-green;
 //             font-size:4rem;
@@ -45,50 +44,58 @@ body{
 //         }
 //     }
 
- 
-
 .site-content,
-.site-header{
-    text-align: left;
+.site-header {
+  text-align: left;
 
-    img{
+  img {
     width: 350px;
+
+    @include tablet {
+      width: 500px;
     }
 
+    @include desktop {
+      width: 700px;
     }
-
-    .blog{
-        .entry-content{
-            display: flex;
-            text-align: left;
-            font-size: 1.5rem;
-            font-weight: 300;
-        }
-       
-        .type-post{
-
-            a{
-            color: $color__text-green;
-            font-size: 1.5rem;
-            font-weight: 300;
-            }
-        }
-        .entry-meta{
-            text-align: left;
-        }
-    }
-
-#new-quote-button{
-    @include quote-button;
-
-    @include desktop{
-
-    &:hover{
-        opacity: 0.8;
-    }
-}
+  }
 }
 
+.blog {
+  .entry-content {
+    display: flex;
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: 300;
 
-  
-  /* Submit a Quote Page */
+    @include tablet {
+      font-size: 2rem;
+    }
+  }
+
+  .type-post {
+    a {
+      color: $color__text-green;
+      font-size: 1.5rem;
+      font-weight: 300;
+    }
+    @include tablet {
+      font-size: 2rem;
+    }
+  }
+  .entry-meta {
+    text-align: left;
+  }
+}
+
+#new-quote-button {
+  @include quote-button;
+
+  @include desktop {
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+/* Submit a Quote Page */
