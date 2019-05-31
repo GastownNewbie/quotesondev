@@ -7,7 +7,7 @@
 
 get_header(); ?>
 
-<div id="primary" class="container" class="content-area">
+<div id="primary" class="content-area">
     <main id="main" class="site-main" role="main">
 
         <section class="quote-submission">
@@ -61,6 +61,8 @@ get_header(); ?>
                     <?php endif; ?>
         </section>
     </main><!-- #main -->
+
+
 </div><!-- #primary -->
 
 <?php get_footer(); ?>

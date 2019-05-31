@@ -7,14 +7,20 @@ body{
     background-color:#222;
     color: white;
     text-align: center;
-   
+
+.container{
+    max-width: $desktop_width;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 2.5%;
+    width: 100%
+}
 
 .site-content{
     width: 100vw;
 
-
-
-.entry-content::before {
+   
+    .entry-content::before {
 
             font-family: 'FontAwesome'; 
             font-weight: 400; 
@@ -31,21 +37,12 @@ body{
             font-size:4rem;
             padding:10px;
         }
-}
-        .entry-content{
-            display: flex;
-            flex-direction: row;
-            justify-content: center;
-            align-items: center;
-        }
+    }
 
-  
+ 
 
 .site-content,
 .site-header{
-    // margin:auto;
-    // margin:auto;
-    // width: 1080px;
     text-align: center;
     line-height: $font__line-height-body;
     font-size: 1rem;
@@ -61,7 +58,7 @@ body{
 
         display: none;
     }
-}
+
 #new-quote-button{
     color: $color__text-green;
     border-color: $color__text-green;
@@ -72,4 +69,16 @@ body{
     font-size: 1.6rem;
     font-weight: 400;
 }
-    /* Submit a Quote Page */
+} //end of body
+
+.home{
+    .entry-content{
+        display: flex;
+       text-align: left;
+    }
+    .type-post{
+        font-size: 2.5rem;
+    }
+}
+  
+  /* Submit a Quote Page */

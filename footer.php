@@ -16,6 +16,7 @@
 	</nav><!-- #site-navigation -->
 
 </footer><!-- #colophon -->
+
 </div><!-- #page -->
 
 <?php wp_footer(); ?>

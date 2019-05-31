@@ -31,5 +31,5 @@
 			<img src="<?php echo get_template_directory_uri() . '/assets/images/qod-logo.svg'; ?> " alt="quotes on dev logo">
 		</header><!-- #masthead -->
 
-	</div>
-	<div id="content" class="site-content">
+
+		<div id="content" class="site-content">

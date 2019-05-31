@@ -624,6 +624,12 @@ body {
   background-color: #222;
   color: white;
   text-align: center; }
+  body .container {
+    max-width: 1080px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 2.5%;
+    width: 100%; }
   body .site-content {
     width: 100vw; }
     body .site-content .entry-content::before {
@@ -640,20 +646,6 @@ body {
       color: #00cc00;
       font-size: 4rem;
       padding: 10px; }
-  body .entry-content {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
   body .site-content,
   body .site-header {
     text-align: center;
@@ -666,16 +658,24 @@ body {
   body .site-branding,
   body .site-description {
     display: none; }
+  body #new-quote-button {
+    color: #00cc00;
+    border-color: #00cc00;
+    padding: 0.9rem 1.9rem;
+    background-color: transparent;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    text-shadow: none;
+    font-size: 1.6rem;
+    font-weight: 400; }
 
-#new-quote-button {
-  color: #00cc00;
-  border-color: #00cc00;
-  padding: 0.9rem 1.9rem;
-  background-color: transparent;
-  -webkit-box-shadow: none;
-          box-shadow: none;
-  text-shadow: none;
-  font-size: 1.6rem;
-  font-weight: 400; }
+.home .entry-content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: left; }
+
+.home .type-post {
+  font-size: 2.5rem; }
 
 /* Submit a Quote Page */

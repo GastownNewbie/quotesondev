@@ -4,3 +4,15 @@
 	margin-left: auto;
 	margin-right: auto;
 }
+// media queries
+
+@mixin tablet{
+	@media(max-width: $tablet_width){
+		@content;
+	}
+}
+@mixin desktop{
+	@media(max-width: $desktop_width){
+		@content;
+	}
+}
