@@ -10,8 +10,11 @@ body {
   line-height: $font__line-height-body;
   letter-spacing: 1.5;
 
+  @include desktop {
+    text-align: center;
+  }
+
   .container {
-    max-width: $desktop_width;
     padding: 2.5%;
     width: 100%;
     margin-left: auto;
@@ -23,26 +26,26 @@ body {
   }
 } //end of body
 
-// .site-content{
-
-//     .entry-content::before {
-
-//             font-family: 'FontAwesome';
-//             font-weight: 400;
-//             content: '\f10d';
-//             font-size: 4rem;
-//             color: $color__text-green;
-//             padding: 10px;
-//         }
-//         .entry-content::after {
-//             font-family: "FontAwesome";
-//             font-weight: 400;
-//             content: "\f10e";
-//             color: $color__text-green;
-//             font-size:4rem;
-//             padding:10px;
-//         }
-//     }
+.site-content {
+  @include desktop {
+    .entry-content::before {
+      font-family: "FontAwesome";
+      font-weight: 400;
+      content: "\f10d";
+      font-size: 5rem;
+      color: $color__text-green;
+      padding: 10px;
+    }
+    .entry-content::after {
+      font-family: "FontAwesome";
+      font-weight: 400;
+      content: "\f10e";
+      color: $color__text-green;
+      font-size: 5rem;
+      padding: 10px;
+    }
+  }
+}
 
 .site-content,
 .site-header {
@@ -65,27 +68,33 @@ body {
   .entry-content {
     display: flex;
     text-align: left;
-    font-size: 1.5rem;
-    font-weight: 300;
+    font-size: 1.25rem;
+    font-weight: 400;
 
     @include tablet {
-      font-size: 2rem;
+      font-size: 1.75rem;
     }
   }
 
   .type-post {
     a {
       color: $color__text-green;
-      font-size: 1.5rem;
-      font-weight: 300;
+      font-size: 1.25rem;
+      font-weight: 400;
     }
     @include tablet {
-      font-size: 2rem;
+      font-size: 1.75rem;
+    }
+    @include desktop {
+      font-size: 2.5rem;
     }
   }
   .entry-meta {
     text-align: left;
   }
+  // @include desktop {
+  //   text-align: center;
+  // }
 }
 
 #new-quote-button {

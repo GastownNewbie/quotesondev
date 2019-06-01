@@ -624,8 +624,10 @@ body {
   color: white;
   line-height: 1.5;
   letter-spacing: 1.5; }
+  @media screen and (min-width: 1080px) {
+    body {
+      text-align: center; } }
   body .container {
-    max-width: 1080px;
     padding: 2.5%;
     width: 100%;
     margin-left: auto;
@@ -633,6 +635,22 @@ body {
   body .site-branding,
   body .site-description {
     display: none; }
+
+@media screen and (min-width: 1080px) {
+  .site-content .entry-content::before {
+    font-family: "FontAwesome";
+    font-weight: 400;
+    content: "\f10d";
+    font-size: 5rem;
+    color: #00cc00;
+    padding: 10px; }
+  .site-content .entry-content::after {
+    font-family: "FontAwesome";
+    font-weight: 400;
+    content: "\f10e";
+    color: #00cc00;
+    font-size: 5rem;
+    padding: 10px; } }
 
 .site-content,
 .site-header {
@@ -654,20 +672,24 @@ body {
   display: -ms-flexbox;
   display: flex;
   text-align: left;
-  font-size: 1.5rem;
-  font-weight: 300; }
+  font-size: 1.25rem;
+  font-weight: 400; }
   @media screen and (min-width: 600px) {
     .blog .entry-content {
-      font-size: 2rem; } }
+      font-size: 1.75rem; } }
 
 .blog .type-post a {
   color: #00cc00;
-  font-size: 1.5rem;
-  font-weight: 300; }
+  font-size: 1.25rem;
+  font-weight: 400; }
 
 @media screen and (min-width: 600px) {
   .blog .type-post {
-    font-size: 2rem; } }
+    font-size: 1.75rem; } }
+
+@media screen and (min-width: 1080px) {
+  .blog .type-post {
+    font-size: 2.5rem; } }
 
 .blog .entry-meta {
   text-align: left; }
