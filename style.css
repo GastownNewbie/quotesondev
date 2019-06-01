@@ -706,7 +706,10 @@ body {
     .blog .entry-meta {
       padding-left: 120px; } }
   .blog .entry-meta .entry-title {
-    font-size: 1.25rem; }
+    font-size: 1.25rem;
+    display: inline-block; }
+  .blog .entry-meta .source {
+    font-style: italic; }
 
 #new-quote-button {
   color: #00cc00;

@@ -106,6 +106,10 @@ body {
 
     .entry-title {
       font-size: 1.25rem;
+      display: inline-block;
+    }
+    .source {
+      font-style: italic;
     }
   }
 }
