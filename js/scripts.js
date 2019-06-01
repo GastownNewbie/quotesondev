@@ -50,6 +50,7 @@
             if (quoteAuthor.length !== '') {
                 // call function postAjax(); below after checking value not empty - need to write else
             }
+
             $.ajax({
                 method: 'post',
                 url: api_vars.rest_url + 'wp/v2/posts',

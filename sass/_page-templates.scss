@@ -6,19 +6,19 @@
 body {
   background-color: #222;
   color: white;
-  // text-align: center;
   line-height: $font__line-height-body;
   letter-spacing: 1.5;
-
-  @include desktop {
-    text-align: center;
-  }
 
   .container {
     padding: 2.5%;
     width: 100%;
+    max-width: 1080px;
     margin-left: auto;
     margin-right: auto;
+  }
+
+  @include desktop {
+    text-align: center;
   }
   .site-branding,
   .site-description {
@@ -51,6 +51,10 @@ body {
 .site-header {
   text-align: left;
 
+  @include desktop {
+    text-align: center;
+  }
+
   img {
     width: 350px;
 
@@ -74,6 +78,10 @@ body {
     @include tablet {
       font-size: 1.75rem;
     }
+    @include desktop {
+      font-size: 2.5rem;
+      padding-left: 20px;
+    }
   }
 
   .type-post {
@@ -91,10 +99,15 @@ body {
   }
   .entry-meta {
     text-align: left;
+
+    @include desktop {
+      padding-left: 120px;
+    }
+
+    .entry-title {
+      font-size: 1.25rem;
+    }
   }
-  // @include desktop {
-  //   text-align: center;
-  // }
 }
 
 #new-quote-button {
