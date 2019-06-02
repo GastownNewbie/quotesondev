@@ -1,0 +1,83 @@
+/* Submit a Quote Page */
+.page-id-211 {
+  #quote-submission-form {
+    display: flex;
+    flex-direction: column;
+    label {
+      font-size: 1rem;
+      font-weight: 300;
+    }
+  }
+  #quote-source {
+    @include submit-form;
+    width: 15rem;
+    height: 2rem;
+
+    @include tablet {
+      width: 20rem;
+    }
+    @include desktop {
+      width: 30rem;
+      height: 4rem;
+    }
+  }
+  #quote-source-url {
+    @include submit-form;
+    width: 15rem;
+    height: 2rem;
+
+    @include tablet {
+      width: 20rem;
+    }
+    @include desktop {
+      width: 30rem;
+      height: 4rem;
+    }
+  }
+
+  #quote-author {
+    @include submit-form;
+    width: 15rem;
+    height: 2rem;
+    @include tablet {
+      width: 20rem;
+    }
+    @include desktop {
+      width: 30rem;
+      height: 4rem;
+    }
+  }
+  #quote-content {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    border: solid 1px $color__text-green;
+    width: 20rem;
+    height: 5rem;
+    @include tablet {
+      width: 30rem;
+    }
+    @include desktop {
+      width: 60rem;
+      height: 10rem;
+    }
+  }
+  .quote-submission-wrapper {
+    text-align: left;
+  }
+
+  button,
+  input[type="button"],
+  input[type="reset"],
+  input[type="submit"] {
+    @include quote-button-1rem;
+    width: 10rem;
+    @include desktop {
+      width: 20rem;
+      @include quote-button;
+      &:hover {
+        opacity: 0.8;
+      }
+    }
+  }
+}

@@ -41,3 +41,9 @@
   font-size: 1rem;
   font-weight: 300;
 }
+@mixin submit-form {
+  display: flex;
+  flex-direction: column;
+  background-color: transparent;
+  border: solid 1px $color__text-green;
+}

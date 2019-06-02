@@ -24,30 +24,31 @@ get_header(); ?>
                 ?>
 
                 <div class="quote-submission-wrapper">
+                    <h1 class="submit-quote-h1">Submit a Quote</h>
 
-                    <form name="quote-form" id="quote-submission-form">
-                        <div>
-                            <label for="quote-author">Author of Quote</label>
-                            <input type="text" name "quote_author" id="quote-author">
-                        </div>
-                        <div>
-                            <label for="quote-content">Quote</label>
-                            <textarea rows="3" cols="20" type="text" name "quote_content" id="quote-content"></textarea>
-                        </div>
-                        <div>
-                            <label for="quote-source">Where did you find this quote? (e.g. book name)</label>
-                            <input type="text" name "quote_source" id="quote-source">
-                        </div>
-                        <div>
-                            <label for="quote-source-url">Provide the URL of the quote source, if available.</label>
-                            <input type="url" name "quote_source_url" id="quote-source-url">
-                        </div>
+                        <form name="quote-form" id="quote-submission-form">
+                            <div>
+                                <label for="quote-author">Author of Quote</label>
+                                <input type="text" name "quote_author" id="quote-author">
+                            </div>
+                            <div>
+                                <label for="quote-content">Quote</label>
+                                <textarea rows="3" cols="20" type="text" name "quote_content" id="quote-content"></textarea>
+                            </div>
+                            <div>
+                                <label for="quote-source">Where did you find this quote? (e.g. book name)</label>
+                                <input type="text" name "quote_source" id="quote-source">
+                            </div>
+                            <div>
+                                <label for="quote-source-url">Provide the URL of the quote source, if available.</label>
+                                <input type="url" name "quote_source_url" id="quote-source-url">
+                            </div>
+                            <br>
+                            <input type="submit" value="Submit Quote">
 
-                        <input type="submit" value="Submit Quote">
+                        </form>
 
-                    </form>
-
-                    <p class="submit-success-message" style="display:none;">Thanks for the awesome quote.</p>
+                        <p class="submit-success-message" style="display:none;">Thanks for the awesome quote.</p>
 
 
 
