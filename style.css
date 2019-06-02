@@ -934,3 +934,9 @@ body {
   @media screen and (min-width: 1080px) {
     .single-post .entry-title {
       padding-left: 8.5rem; } }
+
+.error-404 .search-form {
+  border: solid 3px #00cc00; }
+
+.error-404 button .submit-search {
+  background-color: #00cc00; }
