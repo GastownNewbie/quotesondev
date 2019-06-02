@@ -74,13 +74,14 @@ body {
     text-align: left;
     font-size: 1.25rem;
     font-weight: 400;
+    padding-left: 0;
 
     @include tablet {
       font-size: 1.75rem;
     }
     @include desktop {
       font-size: 2.5rem;
-      padding-left: 20px;
+      padding-left: 4rem;
     }
   }
 
@@ -99,9 +100,10 @@ body {
   }
   .entry-meta {
     text-align: left;
+    padding-left: 0;
 
     @include desktop {
-      padding-left: 120px;
+      padding-left: 10.5rem;
     }
 
     .entry-title {

@@ -13,7 +13,7 @@
 	<div class="site-info">
 		<nav id="site-navigation" class="main-navigation" role="navigation">
 
-			<?php wp_nav_menu(array('theme_location' => 'primary', 'menu_id' => 'primary-menu')); ?>
+			<?php wp_nav_menu(array('theme_location' => 'primary', 'menu_id' => 'primary-menu')); ?><p class="nav-red">Brought to you by <a href="https://redacademy.com/vancouver/"> Red Academy</a></p>
 		</nav><!-- #site-navigation -->
 	</div>
 </footer><!-- #colophon -->
