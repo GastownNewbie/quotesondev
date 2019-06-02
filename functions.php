@@ -79,9 +79,7 @@ function qod_scripts()
 }
 add_action('wp_enqueue_scripts', 'qod_scripts');
 
-// TODo add font awesome wp_enqueue_style this is used for quotes on left and right
-// try adding the quotes with css ::after and ::  before e.g. after article for quotes H1 or before H1 these are pseudo element
-// TODO add your own script.js file wp_enqueue_script
+
 /**
 
  * Custom functions that act independently of the theme templates.

@@ -6,4 +6,15 @@
   button .submit-search {
     background-color: $color__text-green;
   }
+  button {
+    border: 0;
+    float: left;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem;
+  }
+  .search-field {
+    background-color: #222;
+    border: none;
+    outline: none;
+  }
 }

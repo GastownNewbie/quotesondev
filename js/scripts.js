@@ -43,35 +43,59 @@
 
         function postQuote(event) {
             event.preventDefault();
-            console.log('form submitted');
 
-            //TODO write ajax method
+
+            // ajax method submit quote
             const quoteAuthor = $('#quote-author').val();
             if (quoteAuthor.length !== '') {
-                // call function postAjax(); below after checking value not empty - need to write else
+                $("#error").show('slow');
             }
-
+            else {
+                alert("Please enter name of Author.");
+            }
+            const quoteContent = $('#quote-content').val();
+            if (quoteContent.length !== '') {
+                $("#error").show('slow');
+            }
+            else {
+                alert(" Please enter quote.");
+            }
+            const quoteSourceForm = $('#quote-source').val();
+            if (quoteSourceForm.length !== '') {
+                $("#error").show('slow');
+            }
+            else {
+                alert(" Please enter source of quote, if known, or 'anonymous'.");
+            }
+            const quoteSourceUrlForm = $('#quote-source-url').val();
+            if (quoteSourceUrlForm.length !== '') {
+                $("#error").show('slow');
+            }
+            else {
+                alert(" Please enter website link to quote, if available.");
+            }
             $.ajax({
                 method: 'post',
                 url: api_vars.rest_url + 'wp/v2/posts',
                 data: {
-                    // TODO use the form input .val() for the title , content
-                    title: 'A new post from the rest api :)',
-                    content: 'The most amazing quote from ',
+
+                    title: quoteAuthor,
+                    content: quoteContent,
+                    source: quoteSourceForm,
+                    sourceUrl: quoteSourceUrlForm,
                     status: 'pending'
-                    // _qod_quote_source:
-                    //_qod_quote_source_url:
+
                 },
                 beforeSend: function (xhr) {
                     xhr.setRequestHeader('X-WP-Nonce', api_vars.wpapi_nonce);
                 }
 
             }).done(function () {
-                console.log('Great success');
+                alert('Thank you for your submission!');
                 $('#quote-submission-form').slideUp(500);
 
             }).fail(function () {
-                console.log('Form submit failed');
+                alert('Form submit failed');
             });
         } //end of postquote
     }); //end of doc ready
