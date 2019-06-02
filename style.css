@@ -486,6 +486,15 @@ a {
       -ms-flex-pack: end;
           justify-content: flex-end;
   width: 100%; }
+  @media screen and (min-width: 1080px) {
+    .main-navigation {
+      -webkit-box-pack: end;
+          -ms-flex-pack: end;
+              justify-content: flex-end; } }
+  .main-navigation .nav-spacer {
+    padding-left: 15px; }
+  .main-navigation .nav-spacer2 {
+    padding-left: 5px; }
   .main-navigation ul {
     list-style: none;
     margin: 0;
@@ -661,22 +670,23 @@ body {
     max-width: 1080px;
     margin-left: auto;
     margin-right: auto; }
-  @media screen and (min-width: 1080px) {
-    body {
-      text-align: center; } }
   body .site-branding,
   body .site-description {
     display: none; }
 
 @media screen and (min-width: 1080px) {
-  .site-content .entry-content::before {
+  .blog .site-content {
+    text-align: center; } }
+
+@media screen and (min-width: 1080px) {
+  .blog .site-content .entry-content::before {
     font-family: "FontAwesome";
     font-weight: 400;
     content: "\f10d";
     font-size: 5rem;
     color: #00cc00;
     padding: 10px; }
-  .site-content .entry-content::after {
+  .blog .site-content .entry-content::after {
     font-family: "FontAwesome";
     font-weight: 400;
     content: "\f10e";
@@ -709,7 +719,7 @@ body {
   display: flex;
   text-align: left;
   font-size: 1.25rem;
-  font-weight: 400;
+  font-weight: 300;
   padding-left: 0; }
   @media screen and (min-width: 620px) {
     .blog .entry-content {
@@ -722,7 +732,7 @@ body {
 .blog .type-post a {
   color: #00cc00;
   font-size: 1.25rem;
-  font-weight: 400; }
+  font-weight: 300; }
 
 @media screen and (min-width: 620px) {
   .blog .type-post {
@@ -759,3 +769,39 @@ body {
       opacity: 0.8; } }
 
 /* Submit a Quote Page */
+.page-id-215 .container {
+  padding: 2.5%;
+  width: 100%;
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.page-id-215 .site-main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1rem;
+  font-weight: 300;
+  text-align: left; }
+
+.page-id-215 h2 {
+  font-size: 2rem; }
+
+.page-id-215 .post-215 {
+  padding: 0 4rem; }
+
+@media screen and (min-width: 1080px) {
+  .page-id-215 .site-main::before {
+    font-family: "FontAwesome";
+    font-weight: 400;
+    content: "\f10d";
+    font-size: 5rem;
+    color: #00cc00;
+    padding: 10px; }
+  .page-id-215 .site-main::after {
+    font-family: "FontAwesome";
+    font-weight: 400;
+    content: "\f10e";
+    color: #00cc00;
+    font-size: 5rem;
+    padding: 10px; } }

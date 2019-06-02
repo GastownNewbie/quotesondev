@@ -50,6 +50,15 @@ a {
   display: inline-flex;
   justify-content: flex-end;
   width: 100%;
+  @include desktop {
+    justify-content: flex-end;
+  }
+  .nav-spacer {
+    padding-left: 15px;
+  }
+  .nav-spacer2 {
+    padding-left: 5px;
+  }
 
   ul {
     list-style: none;

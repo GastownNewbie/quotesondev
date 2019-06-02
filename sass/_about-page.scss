@@ -1,22 +1,39 @@
 .page-id-215 {
-  .entry-content {
-    display: flex;
-    text-align: left;
-    font-size: 1rem;
-    font-weight: 400;
+  .container {
+    padding: 2.5%;
+    width: 100%;
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
   }
-
-  .type-post {
-    a {
-      color: $color__text-green;
-      font-size: 1rem;
+  .site-main {
+    display: flex;
+    font-size: 1rem;
+    font-weight: 300;
+    text-align: left;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  .post-215 {
+    padding: 0 4rem;
+  }
+  @include desktop {
+    .site-main::before {
+      font-family: "FontAwesome";
       font-weight: 400;
+      content: "\f10d";
+      font-size: 5rem;
+      color: $color__text-green;
+      padding: 10px;
+    }
+    .site-main::after {
+      font-family: "FontAwesome";
+      font-weight: 400;
+      content: "\f10e";
+      color: $color__text-green;
+      font-size: 5rem;
+      padding: 10px;
     }
   }
-  .entry-meta {
-    text-align: left;
-  }
-  // @include desktop {
-  //   text-align: center;
-  // }
 }

@@ -16,17 +16,16 @@ body {
     margin-left: auto;
     margin-right: auto;
   }
-
-  @include desktop {
-    text-align: center;
-  }
   .site-branding,
   .site-description {
     display: none;
   }
-} //end of body
+} //end of styling specific to overall body
 
-.site-content {
+.blog .site-content {
+  @include desktop {
+    text-align: center;
+  }
   @include desktop {
     .entry-content::before {
       font-family: "FontAwesome";
@@ -73,7 +72,7 @@ body {
     display: flex;
     text-align: left;
     font-size: 1.25rem;
-    font-weight: 400;
+    font-weight: 300;
     padding-left: 0;
 
     @include tablet {
@@ -89,7 +88,7 @@ body {
     a {
       color: $color__text-green;
       font-size: 1.25rem;
-      font-weight: 400;
+      font-weight: 300;
     }
     @include tablet {
       font-size: 1.75rem;
