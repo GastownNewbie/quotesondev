@@ -1,0 +1,46 @@
+.single-post {
+  @include desktop {
+    .entry-content::before {
+      font-family: "FontAwesome";
+      font-weight: 400;
+      content: "\f10d";
+      font-size: 5rem;
+      color: $color__text-green;
+      // padding: 10px;
+    }
+    .entry-content::after {
+      font-family: "FontAwesome";
+      font-weight: 400;
+      content: "\f10e";
+      color: $color__text-green;
+      font-size: 5rem;
+      // padding: 10px;
+    }
+  }
+  .entry-content {
+    display: flex;
+    text-align: left;
+    font-size: 1.25rem;
+    font-weight: 300;
+    padding-left: 0;
+
+    @include tablet {
+      font-size: 1.75rem;
+    }
+    @include desktop {
+      font-size: 2.5rem;
+      p {
+        padding-left: 4rem;
+      }
+    }
+  }
+  .entry-title {
+    font-size: 1.25rem;
+    font-weight: 300;
+    text-align: left;
+    padding-left: 0;
+    @include desktop {
+      padding-left: 8.5rem;
+    }
+  }
+}

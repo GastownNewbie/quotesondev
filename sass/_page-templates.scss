@@ -80,7 +80,6 @@ body {
     }
     @include desktop {
       font-size: 2.5rem;
-      padding-left: 4rem;
     }
   }
 
@@ -97,18 +96,26 @@ body {
       font-size: 2.5rem;
     }
   }
+  .entry-title {
+    font-size: 1.25rem;
+    display: inline-block;
+  }
   .entry-meta {
     text-align: left;
     padding-left: 0;
-
-    @include desktop {
-      padding-left: 10.5rem;
+  }
+  @include desktop {
+    padding-left: 0;
+    p {
+      padding-left: 4rem;
     }
 
-    .entry-title {
-      font-size: 1.25rem;
-      display: inline-block;
+    .entry-meta {
+      @include desktop {
+        padding-left: 10rem;
+      }
     }
+
     .source {
       font-style: italic;
     }
@@ -116,9 +123,10 @@ body {
 }
 
 #new-quote-button {
-  @include quote-button;
+  @include quote-button-1rem;
 
   @include desktop {
+    @include quote-button;
     &:hover {
       opacity: 0.8;
     }

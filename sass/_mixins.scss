@@ -31,3 +31,13 @@
   font-size: 1.5rem;
   font-weight: 300;
 }
+@mixin quote-button-1rem {
+  color: $color__text-green;
+  padding: 0.9rem 1.9rem;
+  background-color: transparent;
+  box-shadow: none;
+  text-shadow: none;
+  border: solid 1px $color__text-green;
+  font-size: 1rem;
+  font-weight: 300;
+}
