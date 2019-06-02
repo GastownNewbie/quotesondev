@@ -958,22 +958,56 @@ body {
     .single-post .entry-title {
       padding-left: 8.5rem; } }
 
-.error-404 .search-form {
-  border: solid 3px #00cc00; }
+.error-404 {
+  text-align: left;
+  display: block;
+  padding-top: 2rem; }
+  .error-404 .search-form {
+    border: solid 3px #222;
+    outline: none; }
+  .error-404 button .submit-search {
+    background-color: #00cc00; }
+  .error-404 button {
+    border: 0;
+    float: none;
+    padding-left: 0.75rem;
+    padding-right: 0.75rem; }
+  .error-404 .search-field {
+    background-color: #222;
+    border: solid 1px #00cc00;
+    outline: none; }
+  .error-404 fieldset {
+    border: none;
+    outline: none; }
 
-.error-404 button .submit-search {
-  background-color: #00cc00; }
-
-.error-404 button {
-  border: 0;
-  float: left;
-  padding-left: 0.75rem;
-  padding-right: 0.75rem; }
-
-.error-404 .search-field {
-  background-color: #222;
-  border: none;
-  outline: none; }
+@media screen and (min-width: 1080px) {
+  .page-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%; }
+  .page-header::before {
+    font-family: "FontAwesome";
+    font-weight: 400;
+    content: "\f10d";
+    font-size: 5rem;
+    color: #00cc00;
+    padding: 10px;
+    padding-bottom: 0; }
+  .page-header::after {
+    font-family: "FontAwesome";
+    font-weight: 400;
+    content: "\f10e";
+    color: #00cc00;
+    font-size: 5rem;
+    padding: 10px;
+    padding-bottom: 0; }
+  .page-title {
+    padding-left: 2rem;
+    width: 100%; }
+  .page-content {
+    padding-left: 8rem;
+    margin-top: 0; } }
 
 /* Submit a Quote Page */
 .page-id-211 #quote-submission-form {
@@ -987,6 +1021,30 @@ body {
   .page-id-211 #quote-submission-form label {
     font-size: 1rem;
     font-weight: 300; }
+
+@media screen and (min-width: 1080px) {
+  .page-id-211 .quote-submission-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .page-id-211 .quote-submission-wrapper::before {
+    font-family: "FontAwesome";
+    font-weight: 400;
+    content: "\f10d";
+    font-size: 5rem;
+    color: #00cc00;
+    padding: 10px;
+    padding-bottom: 0; }
+  .page-id-211 .quote-submission-wrapper::after {
+    font-family: "FontAwesome";
+    font-weight: 400;
+    content: "\f10e";
+    color: #00cc00;
+    font-size: 5rem;
+    padding: 10px;
+    padding-bottom: 0; }
+  .page-id-211 .submit-quote-h1 {
+    padding-left: 2rem; } }
 
 .page-id-211 #quote-source {
   color: white;
@@ -1077,7 +1135,7 @@ body {
       width: 30rem; } }
   @media screen and (min-width: 1080px) {
     .page-id-211 #quote-content {
-      width: 60rem;
+      width: 40rem;
       height: 10rem; } }
 
 .page-id-211 .quote-submission-wrapper {

@@ -1,6 +1,11 @@
 .error-404 {
+  text-align: left;
+  display: block;
+  padding-top: 2rem;
+
   .search-form {
-    border: solid 3px $color__text-green;
+    border: solid 3px #222;
+    outline: none;
   }
 
   button .submit-search {
@@ -8,13 +13,51 @@
   }
   button {
     border: 0;
-    float: left;
+    float: none;
     padding-left: 0.75rem;
     padding-right: 0.75rem;
   }
   .search-field {
     background-color: #222;
+    border: solid 1px $color__text-green;
+    outline: none;
+  }
+
+  fieldset {
     border: none;
     outline: none;
+  }
+}
+
+@include desktop {
+  .page-header {
+    display: flex;
+    width: 100%;
+  }
+  .page-header::before {
+    font-family: "FontAwesome";
+    font-weight: 400;
+    content: "\f10d";
+    font-size: 5rem;
+    color: $color__text-green;
+    padding: 10px;
+    padding-bottom: 0;
+  }
+  .page-header::after {
+    font-family: "FontAwesome";
+    font-weight: 400;
+    content: "\f10e";
+    color: $color__text-green;
+    font-size: 5rem;
+    padding: 10px;
+    padding-bottom: 0;
+  }
+  .page-title {
+    padding-left: 2rem;
+    width: 100%;
+  }
+  .page-content {
+    padding-left: 8rem;
+    margin-top: 0;
   }
 }

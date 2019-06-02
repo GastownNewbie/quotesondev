@@ -8,6 +8,34 @@
       font-weight: 300;
     }
   }
+
+  @include desktop {
+    .quote-submission-wrapper {
+      display: flex;
+    }
+    .quote-submission-wrapper::before {
+      font-family: "FontAwesome";
+      font-weight: 400;
+      content: "\f10d";
+      font-size: 5rem;
+      color: $color__text-green;
+      padding: 10px;
+      padding-bottom: 0;
+    }
+    .quote-submission-wrapper::after {
+      font-family: "FontAwesome";
+      font-weight: 400;
+      content: "\f10e";
+      color: $color__text-green;
+      font-size: 5rem;
+      padding: 10px;
+      padding-bottom: 0;
+    }
+    .submit-quote-h1 {
+      padding-left: 2rem;
+    }
+  }
+
   #quote-source {
     color: white;
     outline: none;
@@ -70,7 +98,7 @@
       width: 30rem;
     }
     @include desktop {
-      width: 60rem;
+      width: 40rem;
       height: 10rem;
     }
   }
