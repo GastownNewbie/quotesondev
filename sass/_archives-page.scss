@@ -1,0 +1,69 @@
+.page-id-207 {
+  .container {
+    padding: 2.5%;
+    width: 100%;
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .site-main {
+    display: flex;
+    font-size: 1rem;
+    font-weight: 300;
+    text-align: left;
+  }
+  h2 {
+    font-size: 2rem;
+  }
+  .post-archives,
+  .tag-archives,
+  .category-archives {
+    font-size: 1rem;
+
+    @include desktop {
+      font-size: 1.25rem;
+    }
+  }
+
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 0;
+    padding-left: 0;
+  }
+  li {
+    padding-right: 20px;
+  }
+  .post-archives h2,
+  .tag-archives h2,
+  .category-archives h2 {
+    font-size: 1.5rem;
+  }
+  .browse-archives {
+    padding: 0 4rem;
+  }
+  ul {
+    list-style: none;
+  }
+  a {
+    text-decoration-line: none;
+  }
+  @include desktop {
+    .site-main::before {
+      font-family: "FontAwesome";
+      font-weight: 400;
+      content: "\f10d";
+      font-size: 5rem;
+      color: $color__text-green;
+      padding: 10px;
+    }
+    .site-main::after {
+      font-family: "FontAwesome";
+      font-weight: 400;
+      content: "\f10e";
+      color: $color__text-green;
+      font-size: 5rem;
+      padding: 10px;
+    }
+  }
+}
