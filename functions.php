@@ -1,6 +1,7 @@
 <?php
 /**
  * Quotes on Dev Theme functions and definitions.
+ * LEFT IN ON PURPOSE FOR FUTURE REFERENCE ON OTHER PROJECTS
  *
  * @link https://developer.wordpress.org/themes/basics/theme-functions/
  *

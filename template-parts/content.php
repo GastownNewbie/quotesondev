@@ -2,13 +2,12 @@
 /**
  * Template part for displaying posts.
  *
- * @package QOD_Starter_Theme
+ * @package QOD_Custom_Theme
  */
 
 $source = get_post_meta(get_the_ID(), '_qod_quote_source', true);
 $source_url = get_post_meta(get_the_ID(), '_qod_quote_source_url', true);
-// var_dump($source);
-// var_dump($source_url);
+
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
@@ -40,5 +39,6 @@ $source_url = get_post_meta(get_the_ID(), '_qod_quote_source_url', true);
 	<button type="button" id="new-quote-button">Show Me Another!</button>
 
 <?php endif; ?>
-</div><!-- .entry-content -->
-</article><!-- #post-## -->
+<!-- </div> -->
+<!-- .entry-content -->
+<!-- #post-## -->

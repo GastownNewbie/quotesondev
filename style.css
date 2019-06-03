@@ -975,7 +975,8 @@ body {
   .error-404 .search-field {
     background-color: #222;
     border: solid 1px #00cc00;
-    outline: none; }
+    outline: none;
+    color: white; }
   .error-404 fieldset {
     border: none;
     outline: none; }
