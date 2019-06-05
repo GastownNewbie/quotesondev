@@ -21,15 +21,15 @@
   }
   .post-archives,
   .category-archives {
-    // font-size: 1rem;
     @include desktop {
       font-size: 1.25rem;
     }
   }
   .tag-archives {
-    // font-size: 1rem;
-    @include desktop {
-      font-size: 1.25rem;
+    .tag-cloud-link {
+      @include desktop {
+        font-size: 1.25rem !important;
+      }
     }
   }
 
@@ -39,8 +39,11 @@
     margin-left: 0;
     padding-left: 0;
   }
+
   li {
-    padding-right: 20px;
+    @include tablet {
+      padding-right: 20px;
+    }
   }
   .post-archives h2,
   .tag-archives h2,

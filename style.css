@@ -872,8 +872,8 @@ body {
     font-size: 1.25rem; } }
 
 @media screen and (min-width: 1080px) {
-  .page-id-207 .tag-archives {
-    font-size: 1.25rem; } }
+  .page-id-207 .tag-archives .tag-cloud-link {
+    font-size: 1.25rem !important; } }
 
 .page-id-207 ul {
   display: -webkit-box;
@@ -884,8 +884,9 @@ body {
   margin-left: 0;
   padding-left: 0; }
 
-.page-id-207 li {
-  padding-right: 20px; }
+@media screen and (min-width: 620px) {
+  .page-id-207 li {
+    padding-right: 20px; } }
 
 .page-id-207 .post-archives h2,
 .page-id-207 .tag-archives h2,
