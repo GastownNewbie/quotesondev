@@ -22,6 +22,9 @@
     border: solid 1px $color__text-green;
     outline: none;
     color: white;
+    &:active {
+      border: solid 1px white;
+    }
   }
 
   fieldset {

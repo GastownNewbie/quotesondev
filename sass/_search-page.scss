@@ -1,0 +1,13 @@
+.search {
+  .content-area {
+    text-align: left;
+  }
+  a {
+    text-decoration-line: none;
+  }
+  @include desktop {
+    .search-results-container {
+      padding-left: 120px;
+    }
+  }
+}

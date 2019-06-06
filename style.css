@@ -978,6 +978,8 @@ body {
     border: solid 1px #00cc00;
     outline: none;
     color: white; }
+    .error-404 .search-field:active {
+      border: solid 1px white; }
   .error-404 fieldset {
     border: none;
     outline: none; }
@@ -1171,3 +1173,14 @@ body {
       .page-id-211 input[type="reset"]:hover,
       .page-id-211 input[type="submit"]:hover {
         opacity: 0.8; } }
+
+.search .content-area {
+  text-align: left; }
+
+.search a {
+  -webkit-text-decoration-line: none;
+          text-decoration-line: none; }
+
+@media screen and (min-width: 1080px) {
+  .search .search-results-container {
+    padding-left: 120px; } }
