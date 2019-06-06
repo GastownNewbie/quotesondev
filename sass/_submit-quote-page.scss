@@ -1,5 +1,8 @@
 /* Submit a Quote Page */
 .page-id-211 {
+  .submit-quote-h1 {
+    display: none;
+  }
   @include desktop {
     .content-area {
       display: flex;
@@ -23,9 +26,7 @@
       padding: 10px;
       padding-bottom: 0;
     }
-    .submit-quote-h1 {
-      display: none;
-    }
+
     .entry-header {
       text-align: left;
     }

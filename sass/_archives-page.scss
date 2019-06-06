@@ -58,10 +58,15 @@
     text-decoration-line: none;
   }
   @include desktop {
+    .site-content {
+      margin: 4.5rem 175px 1.5rem;
+      position: relative;
+    }
+
     .browse-archives {
       padding: 0 4rem;
     }
-    .site-main::before {
+    .content-area::before {
       font-family: "FontAwesome";
       font-weight: 400;
       content: "\f10d";
@@ -69,13 +74,43 @@
       color: $color__text-green;
       padding: 10px;
     }
-    .site-main::after {
+    .content-area::after {
       font-family: "FontAwesome";
       font-weight: 400;
       content: "\f10e";
       color: $color__text-green;
       font-size: 5rem;
       padding: 10px;
+    }
+  }
+}
+.category {
+  .container {
+    padding: 2.5%;
+    width: 100%;
+    max-width: 1080px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .content-area {
+    text-align: left;
+  }
+  .page-title {
+    margin-top: 3rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px dotted #fff;
+  }
+  .hentry {
+    border-bottom: 1px dotted #fff;
+    margin: 0.67rem 0;
+  }
+  @include desktop {
+    .type-post {
+      margin-left: 120px;
+      margin-right: 120px;
+    }
+    .entry-content p {
+      font-size: 2.5rem;
     }
   }
 }

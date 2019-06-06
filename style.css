@@ -900,22 +900,51 @@ body {
           text-decoration-line: none; }
 
 @media screen and (min-width: 1080px) {
+  .page-id-207 .site-content {
+    margin: 4.5rem 175px 1.5rem;
+    position: relative; }
   .page-id-207 .browse-archives {
     padding: 0 4rem; }
-  .page-id-207 .site-main::before {
+  .page-id-207 .content-area::before {
     font-family: "FontAwesome";
     font-weight: 400;
     content: "\f10d";
     font-size: 5rem;
     color: #00cc00;
     padding: 10px; }
-  .page-id-207 .site-main::after {
+  .page-id-207 .content-area::after {
     font-family: "FontAwesome";
     font-weight: 400;
     content: "\f10e";
     color: #00cc00;
     font-size: 5rem;
     padding: 10px; } }
+
+.category .container {
+  padding: 2.5%;
+  width: 100%;
+  max-width: 1080px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.category .content-area {
+  text-align: left; }
+
+.category .page-title {
+  margin-top: 3rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px dotted #fff; }
+
+.category .hentry {
+  border-bottom: 1px dotted #fff;
+  margin: 0.67rem 0; }
+
+@media screen and (min-width: 1080px) {
+  .category .type-post {
+    margin-left: 120px;
+    margin-right: 120px; }
+  .category .entry-content p {
+    font-size: 2.5rem; } }
 
 @media screen and (min-width: 1080px) {
   .single-post .entry-content::before {
@@ -1012,6 +1041,9 @@ body {
     margin-top: 0; } }
 
 /* Submit a Quote Page */
+.page-id-211 .submit-quote-h1 {
+  display: none; }
+
 @media screen and (min-width: 1080px) {
   .page-id-211 .content-area {
     display: -webkit-box;
@@ -1034,8 +1066,6 @@ body {
     font-size: 5rem;
     padding: 10px;
     padding-bottom: 0; }
-  .page-id-211 .submit-quote-h1 {
-    display: none; }
   .page-id-211 .entry-header {
     text-align: left; }
   .page-id-211 .quote-submission-wrapper {
