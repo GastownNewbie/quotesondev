@@ -1012,24 +1012,13 @@ body {
     margin-top: 0; } }
 
 /* Submit a Quote Page */
-.page-id-211 #quote-submission-form {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column; }
-  .page-id-211 #quote-submission-form label {
-    font-size: 1rem;
-    font-weight: 300; }
-
 @media screen and (min-width: 1080px) {
-  .page-id-211 .quote-submission-wrapper {
+  .page-id-211 .content-area {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
-  .page-id-211 .quote-submission-wrapper::before {
+    display: flex;
+    margin: 4.5rem 175px 1.5rem; }
+  .page-id-211 .content-area::before {
     font-family: "FontAwesome";
     font-weight: 400;
     content: "\f10d";
@@ -1037,7 +1026,7 @@ body {
     color: #00cc00;
     padding: 10px;
     padding-bottom: 0; }
-  .page-id-211 .quote-submission-wrapper::after {
+  .page-id-211 .content-area::after {
     font-family: "FontAwesome";
     font-weight: 400;
     content: "\f10e";
@@ -1046,7 +1035,11 @@ body {
     padding: 10px;
     padding-bottom: 0; }
   .page-id-211 .submit-quote-h1 {
-    padding-left: 2rem; } }
+    display: none; }
+  .page-id-211 .entry-header {
+    text-align: left; }
+  .page-id-211 .quote-submission-wrapper {
+    padding-left: 10px; } }
 
 .page-id-211 #quote-source {
   color: white;

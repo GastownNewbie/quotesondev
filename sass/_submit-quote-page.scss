@@ -1,19 +1,11 @@
 /* Submit a Quote Page */
 .page-id-211 {
-  #quote-submission-form {
-    display: flex;
-    flex-direction: column;
-    label {
-      font-size: 1rem;
-      font-weight: 300;
-    }
-  }
-
   @include desktop {
-    .quote-submission-wrapper {
+    .content-area {
       display: flex;
+      margin: 4.5rem 175px 1.5rem;
     }
-    .quote-submission-wrapper::before {
+    .content-area::before {
       font-family: "FontAwesome";
       font-weight: 400;
       content: "\f10d";
@@ -22,7 +14,7 @@
       padding: 10px;
       padding-bottom: 0;
     }
-    .quote-submission-wrapper::after {
+    .content-area::after {
       font-family: "FontAwesome";
       font-weight: 400;
       content: "\f10e";
@@ -32,7 +24,13 @@
       padding-bottom: 0;
     }
     .submit-quote-h1 {
-      padding-left: 2rem;
+      display: none;
+    }
+    .entry-header {
+      text-align: left;
+    }
+    .quote-submission-wrapper {
+      padding-left: 10px;
     }
   }
 

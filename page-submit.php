@@ -14,7 +14,7 @@ get_header(); ?>
 
             <header class="entry-header">
 
-                <?php the_title('<h1 class="entry-title">', '</h1>'); ?>
+                <?php the_title('<h1 class="entry-title">', ' a quote', '</h1>'); ?>
 
 
             </header>
@@ -58,10 +58,12 @@ get_header(); ?>
                 </div>
             <?php else : ?>
                 <p>Sorry, you must be logged in to submit a quote.</p>
-                <a href="<?php echo_wp_login_url(); ?>">Click here to login><a>
+                <a href="<?php echo wp_login_url() ?>">Click here to login</a>
 
 
-                    <?php endif; ?>
+
+
+            <?php endif; ?>
         </section>
     </main><!-- #main -->
 
