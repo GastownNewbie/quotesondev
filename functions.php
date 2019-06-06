@@ -70,7 +70,6 @@ function qod_scripts()
 	wp_localize_script("qod-scripts", "api_vars", array(
 		"rest_url" => rest_url(),
 		"wpapi_nonce" => wp_create_nonce("wp_rest"),
-		"post_id" => get_the_ID(),
 		// 'success'=> 'Thanks for your submission!',
 		// 'failure'=> 'Your submission could not be processed.',
 	));
