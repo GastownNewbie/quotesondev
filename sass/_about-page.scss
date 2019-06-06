@@ -15,10 +15,11 @@
   h2 {
     font-size: 2rem;
   }
-  .post-215 {
-    padding: 0 4rem;
-  }
+
   @include desktop {
+    .post-215 {
+      padding: 0 4rem;
+    }
     .site-main::before {
       font-family: "FontAwesome";
       font-weight: 400;

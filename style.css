@@ -826,10 +826,9 @@ body {
 .page-id-215 h2 {
   font-size: 2rem; }
 
-.page-id-215 .post-215 {
-  padding: 0 4rem; }
-
 @media screen and (min-width: 1080px) {
+  .page-id-215 .post-215 {
+    padding: 0 4rem; }
   .page-id-215 .site-main::before {
     font-family: "FontAwesome";
     font-weight: 400;
@@ -893,9 +892,6 @@ body {
 .page-id-207 .category-archives h2 {
   font-size: 1.5rem; }
 
-.page-id-207 .browse-archives {
-  padding: 0 4rem; }
-
 .page-id-207 ul {
   list-style: none; }
 
@@ -904,6 +900,8 @@ body {
           text-decoration-line: none; }
 
 @media screen and (min-width: 1080px) {
+  .page-id-207 .browse-archives {
+    padding: 0 4rem; }
   .page-id-207 .site-main::before {
     font-family: "FontAwesome";
     font-weight: 400;

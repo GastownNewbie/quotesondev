@@ -50,9 +50,7 @@
   .category-archives h2 {
     font-size: 1.5rem;
   }
-  .browse-archives {
-    padding: 0 4rem;
-  }
+
   ul {
     list-style: none;
   }
@@ -60,6 +58,9 @@
     text-decoration-line: none;
   }
   @include desktop {
+    .browse-archives {
+      padding: 0 4rem;
+    }
     .site-main::before {
       font-family: "FontAwesome";
       font-weight: 400;
