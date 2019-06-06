@@ -15,15 +15,15 @@
 
             })
                 .done(function (data) {
-                    const $title = data[0].title.rendered;
-                    const $content = data[0].content.rendered;
-                    const $quoteSource = data[0]._qod_quote_source;
-                    const $quoteSourceUrl = data[0]._qod_quote_source_url;
+                    const title = data[0].title.rendered;
+                    const content = data[0].content.rendered;
+                    const quoteSource = data[0]._qod_quote_source;
+                    const quoteSourceUrl = data[0]._qod_quote_source_url;
 
 
-                    $(".entry-content").html($content);
-                    $(".entry-title").html($title);
-                    $(".source").html('<a href="' + $quoteSourceUrl + '">' + $quoteSource + '</a>');
+                    $(".entry-content").html(content);
+                    $(".entry-title").html(title);
+                    $(".source").html('<a href="' + quoteSourceUrl + '">' + quoteSource + '</a>');
 
                     history.pushState(null, null, data[0].slug);
                 })
