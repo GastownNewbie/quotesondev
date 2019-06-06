@@ -28,9 +28,10 @@
                     history.pushState(null, null, data[0].slug);
                 })
 
-                .fail(function (error) {
-                    console.log(error);
+                .fail(function () {
+                    alert('Sorry, this request was not completed.');
                 });
+
 
             $(window).on('popstate', function () {
                 window.location.replace(lastPage);
@@ -47,32 +48,33 @@
 
             // ajax method submit quote
             const quoteAuthor = $('#quote-author').val();
+            const errors = $('#error');
             if (quoteAuthor.length !== '') {
-                $("#error").show('slow');
+                errors.show('slow');
             }
             else {
-                alert("Please enter name of Author.");
+                alert('Please enter name of Author.');
             }
             const quoteContent = $('#quote-content').val();
             if (quoteContent.length !== '') {
-                $("#error").show('slow');
+                errors.show('slow');
             }
             else {
                 alert(" Please enter quote.");
             }
             const quoteSourceForm = $('#quote-source').val();
             if (quoteSourceForm.length !== '') {
-                $("#error").show('slow');
+                errors.show('slow');
             }
             else {
                 alert(" Please enter source of quote, if known, or 'anonymous'.");
             }
             const quoteSourceUrlForm = $('#quote-source-url').val();
             if (quoteSourceUrlForm.length !== '') {
-                $("#error").show('slow');
+                errors.show('slow');
             }
             else {
-                alert(" Please enter website link to quote, if available.");
+                alert('Please enter website link to quote, if available.');
             }
             $.ajax({
                 method: 'post',
