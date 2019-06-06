@@ -920,30 +920,36 @@ body {
     font-size: 5rem;
     padding: 10px; } }
 
-.category .container {
+.category .container,
+.tag .container {
   padding: 2.5%;
   width: 100%;
   max-width: 1080px;
   margin-left: auto;
   margin-right: auto; }
 
-.category .content-area {
+.category .content-area,
+.tag .content-area {
   text-align: left; }
 
-.category .page-title {
+.category .page-title,
+.tag .page-title {
   margin-top: 3rem;
   padding-bottom: 1.5rem;
   border-bottom: 1px dotted #fff; }
 
-.category .hentry {
+.category .hentry,
+.tag .hentry {
   border-bottom: 1px dotted #fff;
   margin: 0.67rem 0; }
 
 @media screen and (min-width: 1080px) {
-  .category .type-post {
+  .category .type-post,
+  .tag .type-post {
     margin-left: 120px;
     margin-right: 120px; }
-  .category .entry-content p {
+  .category .entry-content p,
+  .tag .entry-content p {
     font-size: 2.5rem; } }
 
 @media screen and (min-width: 1080px) {
