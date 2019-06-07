@@ -510,8 +510,8 @@ a {
       display: -ms-inline-flexbox;
       display: inline-flex; } }
   @media screen and (min-width: 620px) {
-    .main-navigation .nav-spacer {
-      padding-left: 15px; } }
+    .main-navigation .nav-spacer1 {
+      padding-left: 1rem; } }
   .main-navigation .nav-spacer2 {
     padding-left: 5px; }
   .main-navigation ul {
@@ -781,7 +781,7 @@ body {
   .blog .entry-content {
     padding-left: 0; }
     .blog .entry-content p {
-      padding-left: 4rem; } }
+      padding-left: 2rem; } }
 
 #new-quote-button {
   outline: none;
@@ -844,37 +844,36 @@ body {
     font-size: 5rem;
     padding: 10px; } }
 
-.page-id-207 .container {
+.page-archives .container {
   padding: 2.5%;
   width: 100%;
   max-width: 1080px;
   margin-left: auto;
   margin-right: auto; }
 
-.page-id-207 .site-main {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+.page-archives .site-content {
   font-size: 1rem;
   font-weight: 300;
   text-align: left; }
   @media screen and (min-width: 1080px) {
-    .page-id-207 .site-main {
+    .page-archives .site-content {
       font-size: 1.25rem; } }
 
-.page-id-207 h2 {
+.page-archives h2 {
   font-size: 2rem; }
 
 @media screen and (min-width: 1080px) {
-  .page-id-207 .post-archives,
-  .page-id-207 .category-archives {
+  .page-archives .post-archives,
+  .page-archives .category-archives {
     font-size: 1.25rem; } }
 
 @media screen and (min-width: 1080px) {
-  .page-id-207 .tag-archives .tag-cloud-link {
+  .page-archives .tag-archives .tag-cloud-link {
     font-size: 1.25rem !important; } }
 
-.page-id-207 ul {
+.page-archives .post-archives ul,
+.page-archives .tag-archives ul,
+.page-archives .category-archives ul {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -883,36 +882,38 @@ body {
   margin-left: 0;
   padding-left: 0; }
 
-@media screen and (min-width: 620px) {
-  .page-id-207 li {
-    padding-right: 20px; } }
+.page-archives .post-archives li,
+.page-archives .tag-archives li,
+.page-archives .category-archives li {
+  padding: 5px 10px; }
 
-.page-id-207 .post-archives h2,
-.page-id-207 .tag-archives h2,
-.page-id-207 .category-archives h2 {
+.page-archives .post-archives h2,
+.page-archives .tag-archives h2,
+.page-archives .category-archives h2 {
   font-size: 1.5rem; }
 
-.page-id-207 ul {
+.page-archives ul {
   list-style: none; }
 
-.page-id-207 a {
+.page-archives a {
   -webkit-text-decoration-line: none;
           text-decoration-line: none; }
 
 @media screen and (min-width: 1080px) {
-  .page-id-207 .site-content {
-    margin: 4.5rem 175px 1.5rem;
-    position: relative; }
-  .page-id-207 .browse-archives {
+  .page-archives .browse-archives {
     padding: 0 4rem; }
-  .page-id-207 .content-area::before {
+  .page-archives .site-main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .page-archives .site-main::before {
     font-family: "FontAwesome";
     font-weight: 400;
     content: "\f10d";
     font-size: 5rem;
     color: #00cc00;
     padding: 10px; }
-  .page-id-207 .content-area::after {
+  .page-archives .site-main::after {
     font-family: "FontAwesome";
     font-weight: 400;
     content: "\f10e";

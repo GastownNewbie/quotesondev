@@ -71,9 +71,9 @@ a {
     justify-content: flex-end;
     display: inline-flex;
   }
-  .nav-spacer {
+  .nav-spacer1 {
     @include tablet {
-      padding-left: 15px;
+      padding-left: 1rem;
     }
   }
   .nav-spacer2 {

@@ -1,4 +1,4 @@
-.page-id-207 {
+.page-archives {
   .container {
     padding: 2.5%;
     width: 100%;
@@ -6,8 +6,7 @@
     margin-left: auto;
     margin-right: auto;
   }
-  .site-main {
-    display: flex;
+  .site-content {
     font-size: 1rem;
     font-weight: 300;
     text-align: left;
@@ -33,17 +32,18 @@
     }
   }
 
-  ul {
+  .post-archives ul,
+  .tag-archives ul,
+  .category-archives ul {
     display: flex;
     flex-wrap: wrap;
     margin-left: 0;
     padding-left: 0;
   }
-
-  li {
-    @include tablet {
-      padding-right: 20px;
-    }
+  .post-archives li,
+  .tag-archives li,
+  .category-archives li {
+    padding: 5px 10px;
   }
   .post-archives h2,
   .tag-archives h2,
@@ -58,15 +58,13 @@
     text-decoration-line: none;
   }
   @include desktop {
-    .site-content {
-      margin: 4.5rem 175px 1.5rem;
-      position: relative;
-    }
-
     .browse-archives {
       padding: 0 4rem;
     }
-    .content-area::before {
+    .site-main {
+      display: flex;
+    }
+    .site-main::before {
       font-family: "FontAwesome";
       font-weight: 400;
       content: "\f10d";
@@ -74,7 +72,7 @@
       color: $color__text-green;
       padding: 10px;
     }
-    .content-area::after {
+    .site-main::after {
       font-family: "FontAwesome";
       font-weight: 400;
       content: "\f10e";
