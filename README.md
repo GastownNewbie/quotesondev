@@ -2,27 +2,24 @@
 
 A WordPress custom theme for the Quotes on Dev project, forked from Underscores. Designed to be responsive.
 
-## Installation
+### Technology Used
 
-### 1. Download me (don't clone me!)
+Javascript - jQuery
+HTML5
+CSS3
+PHP
 
-Then add me to your `wp-content/themes` directory.
 
-### 2. Rename the `quotesondev-starter-master` directory
+### Tools
 
-Make sure that the theme directory name is project appropriate! Do you need `starter` or `master` in the directory name?
+Git - Github
+Chrome - dev tools
+Wordpress
+Visual Studio - Code Editor
+Gulp - task runner
 
-### 3. Install the dev dependencies
 
-Next you'll need to run `npm install` **inside your theme directory** to install the npm packages you'll need for Gulp, etc.
-
-### 4. Update the proxy in `gulpfile.js`
-
-Lastly, be sure to update your `gulpfile.js` with the appropriate URL for the Browsersync proxy (so change `localhost[:port-here]/[your-dir-name-here]` to the appropriate localhost URL).
-
-And now would be a good time to `git init` :)
-
-### 5. Learnings
+### Learnings
 
 This project involves using JQuery, WP hooks, APIs and SASS to customize a Wordpress theme.
 
