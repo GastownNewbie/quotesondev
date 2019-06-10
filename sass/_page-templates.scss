@@ -1,7 +1,11 @@
 /*--------------------------------------------------------------
 # Page Templates
 --------------------------------------------------------------*/
-
+@include desktop {
+  .site-header {
+    margin-top: 3rem;
+  }
+}
 /* All Archives Page */
 body {
   background-color: #222;

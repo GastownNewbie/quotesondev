@@ -1,7 +1,12 @@
 /* Submit a Quote Page */
-.page-id-211 {
+.page-submit {
   .submit-quote-h1 {
     display: none;
+  }
+  @include desktop {
+    .site-header {
+      margin-top: 3rem;
+    }
   }
   @include desktop {
     .content-area {

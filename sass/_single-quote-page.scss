@@ -1,5 +1,10 @@
 .single-post {
   @include desktop {
+    .site-header {
+      margin-top: 3rem;
+    }
+  }
+  @include desktop {
     .entry-content::before {
       font-family: "FontAwesome";
       font-weight: 400;
