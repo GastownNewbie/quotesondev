@@ -1,7 +1,8 @@
 # Quotes on Dev
 
 A WordPress custom theme for the Quotes on Dev project, forked from Underscores. Designed to be responsive.
-<img src=" <?php echo get_template_directory_uri() . '/assets/images/qod-logo.svg'; ?>" >
+
+![Screen shot of homepage.]("<?php echo get_template_directory_uri() . '/assets/images/screen-shot.png'; ?>")
 
 ### Technology Used
 
