@@ -64,7 +64,7 @@ function qod_modify_archives($query)
 }
 add_action('pre_get_posts', 'qod_modify_archives');
 
-
+// Code to add specific classes per page to body in WP
 function qod_body_class_for_pages($classes)
 {
     if (is_singular('page')) {
