@@ -42,6 +42,6 @@ e.g.
 
 Hot tip: By installing the "Show Current Template" WP pluggin, you will have a tool to know which template to target for each page.
 
-### 6. Acknowledgments
+### Acknowledgments
 
 So grateful to our understanding and skilled teachers Jim and Ben at Red Academy and our teaching assistants Jerimiah and Jenna. Without you, I would not have learned so much!
